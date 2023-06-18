@@ -10,9 +10,11 @@ CTX=["getOwnPropertyNames","ServiceWorker","EventTarget","EventSource","Navigati
 caches.native=[...new Set([...Object[CTX[33]](this),...Object[CTX[33]](String[CTX[41]]),...Object[CTX[33]](Object),...Object[CTX[33]](Object[CTX[41]]),...Object[CTX[33]](Function[CTX[41]]),...Object[CTX[33]](Array[CTX[41]]),...Object[CTX[33]](Element[CTX[41]]),"console",...Object[CTX[33]](console),...Object[CTX[33]](Navigator[CTX[41]]),...Object[CTX[33]](Navigation),...Object[CTX[33]](ServiceWorker[CTX[41]]),...Object[CTX[33]](Worker[CTX[41]]),...Object[CTX[33]](GPUBuffer[CTX[41]]),...Object[CTX[33]](Event[CTX[41]]),...Object[CTX[33]](EventTarget[CTX[41]]),...Object[CTX[33]](EventSource[CTX[41]]),...Object[CTX[33]](Document[CTX[41]])])][CTX[57]]((_,__)=>__[CTX[50]]-_[CTX[50]])
 // Begin Obfuscation
 ini=()=>((A,B,C,D,E)=>{
+// Input Check
+if(null==A||''==A){console.error("No Input");return;};
 // Payload Manipulation
-A=A[CTX[38]]('...','++_+:_')
-A=A[CTX[38]](/\/\/.*?\n/g,'')[CTX[38]](/\/\*.*?\*\//g,'')
+A=A[CTX[38]]('...','++_+:_');
+A=A[CTX[38]](/\/\/.*?\n/g,'')[CTX[38]](/\/\*.*?\*\//g,'');
 caches.native[CTX[60]](_=>(A[CTX[54]](RegExp(`\\["${_}"\]|\\['${_}'\]`))!==null)?(C[CTX[56]](B[CTX[56]](_)-1),A=A[CTX[38]](RegExp(`\\["${_}"\]|\\['${_}'\]`,'g'),`[CTX[${C[CTX[55]]()}]]`)):_);
 caches.native[CTX[60]](_=>(A[CTX[54]](RegExp("."+_+"."))!==null)?(C[CTX[56]](B[CTX[56]](_)-1),A=A[CTX[38]]("."+_+".",`[CTX[${C[CTX[55]]()}]].`)):_);
 caches.native[CTX[60]](_=>(A[CTX[54]](RegExp("(![A-Z]|![a-z])"+_+"."))!==null)?(C[CTX[56]](B[CTX[56]](_)-1),A=A[CTX[38]](RegExp("(![A-Z]|![a-z])"+_+".",'g'),`this[CTX[${C[CTX[55]]()}]].`)):_);
